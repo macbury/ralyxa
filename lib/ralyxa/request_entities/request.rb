@@ -33,6 +33,13 @@ module Ralyxa
         @request['request']['intent']['slots'][slot_name]['value']
       end
 
+      def slot_id(slot_name)
+        resolution = @request['request']['intent']['slots'][slot_name]['resolutions']['resolutionsPerAuthority'].select do |resolution|
+          resolution['status']['code'] == 'ER_SUCCESS_MATCH'
+        end
+        resolution.first['values'].first['value']['id']
+      end
+
       def new_session?
         @request['session']['new']
       end

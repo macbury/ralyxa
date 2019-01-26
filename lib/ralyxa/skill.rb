@@ -1,4 +1,5 @@
 require_relative './request_entities/request'
+require_relative './request_entities/lambda_request'
 require_relative './handler'
 
 # Routes an incoming request to the correct Handler.

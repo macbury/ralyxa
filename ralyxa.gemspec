@@ -3,12 +3,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ralyxa/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'ralyxa'
+  spec.name          = 'ralyxa-lambda'
   spec.version       = Ralyxa::VERSION
   spec.authors       = ['Sam Morgan']
   spec.email         = ['samm@makersacademy.com']
 
-  spec.summary       = 'A Ruby framework for interacting with Amazon Alexa.'
+  spec.summary       = 'A Ruby framework for interacting with Amazon Alexa and lambda support'
   spec.description   = 'A Ruby framework for interacting with Amazon Alexa. Designed to work with Sinatra, although can be used with a few other web frameworks.'
   spec.homepage      = 'https://github.com/sjmog/ralyxa'
   spec.license       = 'MIT'
